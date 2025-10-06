@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import navigationData from "../Header/Nav.json";
 import { useRouter } from "next/navigation";
+import { ALT_PHONE_NUMBER, PHONE_NUMBER } from "@/lib/constants";
 
 const Footer = () => {
   const router = useRouter();
@@ -24,9 +25,9 @@ const Footer = () => {
     <div className="bg-muted-900 text-white">
       <div className="max-w-[1300px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 px-4 pb-4 gap-8 min-h-[400px] pt-10">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="relative w-[100px] h-[80px] rotate-3">
+          <Link href="/" className="relative w-[100px] h-[80px]">
             <Image
-              src="/images/peak-white-2.png"
+              src="/images/wildways_logo.jpg"
               alt="logo"
               fill
               priority
@@ -65,10 +66,10 @@ const Footer = () => {
               <PhoneCall size={25} className="text-yellow-500" />
               <div>
                 <Link href="/">
-                  <p className="text-md">+919596173535</p>
+                  <p className="text-md">{PHONE_NUMBER}</p>
                 </Link>
                 <Link href="/">
-                  <p className="text-md">+916005252876</p>
+                  <p className="text-md">{ALT_PHONE_NUMBER}</p>
                 </Link>
               </div>
             </div>
@@ -76,10 +77,10 @@ const Footer = () => {
               <MessageCircle size={25} className="text-yellow-500" />
               <div>
                 <Link href="/">
-                  <p className="text-md">+919596173535</p>
+                  <p className="text-md">{PHONE_NUMBER}</p>
                 </Link>
                 <Link href="/">
-                  <p className="text-md">+916005252876</p>
+                  <p className="text-md">{ALT_PHONE_NUMBER}</p>
                 </Link>
               </div>
             </div>
@@ -87,7 +88,7 @@ const Footer = () => {
               <Mail size={25} className="text-yellow-500" />
               <div>
                 <Link href="/">
-                  <p className="text-md break-all">peaksholidays@gmail.com</p>
+                  <p className="text-md break-all">wildwaysglobal@gmail.com</p>
                 </Link>
               </div>
             </div>
@@ -114,7 +115,7 @@ const Footer = () => {
       <div className="max-w-[1300px] mx-auto pb-10">
         <hr className="border-gray" />
         <p className="text-center pt-4 text-md">
-          Copyright &copy; <span className="text-primary ">Peaks Holidays</span>{" "}
+          Copyright &copy; <span className="text-primary ">Wildways Global</span>{" "}
         </p>
       </div>
     </div>

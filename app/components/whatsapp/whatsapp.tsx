@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { PHONE_NUMBER } from "@/lib/constants";
 
 const WhatsAppRedirect = () => {
   const handleWhatsAppRedirect = () => {
-    const phoneNumber = "+919596173535";
+    
     const message =
       "Hello! I'm interested in knowing more about your services.";
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(
       message
     )}`;
     window.location.href = whatsappURL;
