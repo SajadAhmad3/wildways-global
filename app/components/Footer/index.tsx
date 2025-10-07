@@ -13,7 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 import navigationData from "../Header/Nav.json";
 import { useRouter } from "next/navigation";
-import { ALT_PHONE_NUMBER, PHONE_NUMBER } from "@/lib/constants";
+import { ADDRESS, ALT_PHONE_NUMBER, EMAIL, PHONE_NUMBER } from "@/lib/constants";
 
 const Footer = () => {
   const router = useRouter();
@@ -63,7 +63,7 @@ const Footer = () => {
           <h3 className="text-[20px] font-semibold">Contact Us</h3>
           <div className="flex flex-col gap-5 pt-5">
             <div className="flex gap-4 items-center">
-              <PhoneCall size={25} className="text-yellow-500" />
+              <PhoneCall size={25} className="text-yellow-500 shrink-0" />
               <div>
                 <Link href="/">
                   <p className="text-md">{PHONE_NUMBER}</p>
@@ -74,7 +74,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex gap-4 items-center">
-              <MessageCircle size={25} className="text-yellow-500" />
+              <MessageCircle size={25} className="text-yellow-500 shrink-0" />
               <div>
                 <Link href="/">
                   <p className="text-md">{PHONE_NUMBER}</p>
@@ -85,18 +85,18 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex gap-4 items-center">
-              <Mail size={25} className="text-yellow-500" />
+              <Mail size={25} className="text-yellow-500 shrink-0" />
               <div>
                 <Link href="/">
-                  <p className="text-md break-all">wildwaysglobal@gmail.com</p>
+                  <p className="text-md break-all">{EMAIL}</p>
                 </Link>
               </div>
             </div>
             <div className="flex gap-4 items-center">
-              <MapPin size={40} className="text-yellow-500" />
+              <MapPin size={25} className="text-yellow-500 shrink-0" />
               <div>
                 <p className="text-md">
-                  Main Market Gulmarg, Baramulla - 193403
+                  {ADDRESS}
                 </p>
               </div>
             </div>

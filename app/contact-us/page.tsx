@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Image from "next/image";
 import { Phone, Mail, MapPin, CheckCircle, Headset } from "lucide-react";
 import { toast, ToastContainer } from "react-toastify";
+import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/lib/constants";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -62,11 +63,11 @@ const ContactForm = () => {
             </h3>
             <div className="flex items-center gap-2">
               <Phone />
-              <p className="mt-2"> +91 9596173535</p>
+              <p className="mt-2">{PHONE_NUMBER}</p>
             </div>
             <div className="flex items-center gap-2 break-all">
               <Mail />
-              <p>info@peaksholidays.com</p>
+              <p>{EMAIL}</p>
             </div>
           </div>
           <div className="bg-primary text-white p-5 rounded-lg shadow-md flex flex-col gap-2 max-w-[238px] md:max-w-full">
@@ -81,7 +82,7 @@ const ContactForm = () => {
               <MapPin /> Office Location
             </h3>
             <p className="mt-2">
-              Main Market Gulmarg, Baramulla, Jammu and Kashmir 193403
+              {ADDRESS}
             </p>
           </div>
         </div>

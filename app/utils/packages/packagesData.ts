@@ -1,28 +1,12 @@
 export const packagesData = [
   // Gulmarg Packages
   {
-    title: "Gulmarg Skiing Adventure",
-    image: "/images/packages/skiing.jpg",
-    location: "Gulmarg",
-    duration: "4 days",
-    people: "Per Person",
-    price: "₹14,999",
-  },
-  {
     title: "Gulmarg Gondola Ride",
     image: "/images/packages/gondola.jpg",
     location: "Gulmarg",
     duration: "3 days",
     people: "Per Person",
     price: "₹9,999",
-  },
-  {
-    title: "Gulmarg Snowboarding Tour",
-    image: "/images/packages/snowboarding.jpg",
-    location: "Gulmarg",
-    duration: "5 days",
-    people: "Per Person",
-    price: "₹16,500",
   },
   {
     title: "Gulmarg Winter Wonderland",

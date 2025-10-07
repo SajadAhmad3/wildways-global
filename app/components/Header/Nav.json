@@ -1,6 +1,9 @@
 [
     { "path": "/", "label": "Home" },
+    { "path": "/ski-courses", "label": "Ski Courses" },
     { "path": "/destinations", "label": "Destinations" },
-    { "path": "/packages", "label": "Packages" }
+    { "path": "/packages", "label": "Packages" },
+    { "path": "/team", "label": "Our Team" },
+    { "path": "/gallery", "label": "Gallery" }
   ]
   

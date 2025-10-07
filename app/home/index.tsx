@@ -5,7 +5,6 @@ import Banner from "./sections/banner";
 import Services from "./sections/services";
 import Destinations from "./sections/destinations";
 import Packages from "./sections/packages";
-import Team from "./sections/team";
 import ContactUs from "./sections/contact-us";
 import WhatsAppRedirect from "../components/whatsapp/whatsapp";
 
@@ -16,7 +15,6 @@ function Home() {
       <Services />
       <Destinations />
       <Packages />
-      <Team />
       <ContactUs />
       <div className="fixed bottom-8 right-8">
         <WhatsAppRedirect />
