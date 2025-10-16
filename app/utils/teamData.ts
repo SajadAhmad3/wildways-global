@@ -9,17 +9,17 @@ export interface TeamMember {
 
 export const teamData: TeamMember[] = [
   {
-    name: "Sajad  Ahmad",
+    name: "Fayaz Kashmiri",
     designation: "Founder & CEO",
-    imageUrl: "/images/team/sajad.jpeg",
+    imageUrl: "/images/team/skier.jpg",
     twitterUrl: "https://twitter.com/johndoe",
     instagramUrl: "https://instagram.com/johndoe",
     facebookUrl: "https://facebook.com/johndoe",
   },
   {
-    name: "Zahid Lone",
-    designation: "Marketing Head",
-    imageUrl: "/images/team/zahid.jpeg",
+    name: "Haseeb Hajam",
+    designation: "Lead Ski Instructor",
+    imageUrl: "/images/team/haseeb_3.jpg",
     twitterUrl: "https://twitter.com/janesmith",
     instagramUrl: "https://instagram.com/janesmith",
     facebookUrl: "https://facebook.com/janesmith",

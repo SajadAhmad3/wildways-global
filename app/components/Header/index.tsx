@@ -35,7 +35,7 @@ const Header = () => {
         }`}
       >
         <div className="flex items-center justify-between w-full mx-auto">
-          <Link href="/" className="relative w-[180px] h-[80px]">
+          <Link href="/" className="relative w-[120px] h-[50px] md:w-[180px] md:h-[80px]">
             <Image
               src="/images/wildways_logo.jpg"
               alt="logo"

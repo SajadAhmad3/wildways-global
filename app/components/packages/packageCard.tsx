@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { MapPin, Calendar, Users, MessageCircle, Phone } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { PHONE_NUMBER } from "@/lib/constants";
 
 interface PackageProps {
   title: string;
@@ -23,11 +24,11 @@ const PackageCard: React.FC<PackageProps> = ({
   price,
 }) => {
   const router = useRouter();
-  const phoneNumber = "+919596173535";
+
   const handleWhatsAppRedirect = () => {
     const message =
       "Hello! I'm interested in knowing more about your services.";
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(
       message
     )}`;
     window.location.href = whatsappURL;
@@ -38,7 +39,7 @@ const PackageCard: React.FC<PackageProps> = ({
   };
 
   const handleCallRedirect = () => {
-    window.location.href = `tel:${phoneNumber}`;
+    window.location.href = `tel:${PHONE_NUMBER}`;
   };
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
