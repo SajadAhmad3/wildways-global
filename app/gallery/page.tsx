@@ -1,11 +1,13 @@
 import React from "react";
 import Container from "../components/Container";
 import Image from "next/image";
+import Gallery from "../components/Gallery/gallery";
+import galleryData from "../utils/galleryData.json";
 
-const Destinations = () => {
+const   GaalleyPage = () => {
   return (
     <Container className="mb-10 mt-[70px]">
-      <div className="relative w-full h-[200px] lg:h-[350px] ">
+      <div className="relative w-full h-[200px] lg:h-[350px]">
         <Image
           src={"/images/home/snowboard.jpg"}
           alt="Banner"
@@ -20,11 +22,11 @@ const Destinations = () => {
         </div>
       </div>
 
-      <div className=" grid grid-cols-1 gap-6 mt-6 ">
-       our gallery
+      <div className="mt-6">
+        <Gallery galleryData={galleryData} />
       </div>
     </Container>
   );
 };
 
-export default Destinations;
+export default GaalleyPage;

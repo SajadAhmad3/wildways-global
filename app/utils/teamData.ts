@@ -24,20 +24,4 @@ export const teamData: TeamMember[] = [
     instagramUrl: "https://instagram.com/janesmith",
     facebookUrl: "https://facebook.com/janesmith",
   },
-  {
-    name: "Mudasir Reshi",
-    designation: "Lead Tour Guide",
-    imageUrl: "/images/team/mudasir.jpeg",
-    twitterUrl: "https://twitter.com/michaeljohnson",
-    instagramUrl: "https://instagram.com/michaeljohnson",
-    facebookUrl: "https://facebook.com/michaeljohnson",
-  },
-  {
-    name: "Rayees Lone",
-    designation: "Operations Manager",
-    imageUrl: "/images/team/rayees.jpeg",
-    twitterUrl: "https://twitter.com/emilydavis",
-    instagramUrl: "https://instagram.com/emilydavis",
-    facebookUrl: "https://facebook.com/emilydavis",
-  },
 ];
