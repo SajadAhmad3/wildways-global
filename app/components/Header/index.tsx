@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <div className="fixed w-full top-0 left-0 right-0 z-[9999] transition-all duration-300">
       <nav
-        className={`relative z-10 mx-auto px-5 md:px-10 py-4 transition-all duration-300 ${
+        className={`relative z-10 mx-auto pl-0 pr-5 md:pr-10 py-4 transition-all duration-300 ${
           pathname === "/" && !scrolled
             ? "bg-white/10 backdrop-blur text-white py-4"
             : "bg-secondary-50 shadow-md text-black py-4"
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="flex items-center justify-between w-full mx-auto">
           <Link href="/" className="relative w-[120px] h-[50px] md:w-[180px] md:h-[80px]">
             <Image
-              src="/images/wildways_logo.jpg"
+              src="/images/wildways_logo.png"
               alt="logo"
               fill
               priority
