@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { destinations } from "@/app/utils/destinations/destData";
 import Container from "@/app/components/Container";
